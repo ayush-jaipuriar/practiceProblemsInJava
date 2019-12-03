@@ -1,5 +1,6 @@
 {
     "configurations": [
+
         {
             "type": "java",
             "name": "CodeLens (Launch) - LinkedList",
@@ -17,6 +18,11 @@
             "name": "CodeLens (Launch) - recursion",
             "request": "launch",
             "mainClass": "recursion"
+        } {
+            "type": "java",
+            "name": "CodeLens (Launch) - recursion",
+            "request": "launch",
+            "mainClass": "linkedListSearch"
         }
     ]
 }
