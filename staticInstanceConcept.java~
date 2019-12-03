@@ -1,0 +1,31 @@
+import java.io.*;
+class staticInstanceConcept
+{
+static String staticVariable;
+String instanceVariable;
+static String staticMethod()
+{
+staticVariable="Static Variable";	 
+return "Static Method" ;  }
+String instanceMethod()
+{ 
+instanceVariable="Instance Variable";
+return "Instance Method"; }
+public static void main(String[] args) {
+	System.out.println(staticVariable);
+	System.out.println(staticInstanceConcept.staticMethod());
+	System.out.println(staticVariable);
+	System.out.println(new staticInstanceConcept().instanceVariable);
+	System.out.println(new staticInstanceConcept().instanceMethod());
+	System.out.println(new staticInstanceConcept().instanceVariable);
+	
+	
+	
+	
+	
+	
+	
+	
+	System.exit(0);
+}
+}

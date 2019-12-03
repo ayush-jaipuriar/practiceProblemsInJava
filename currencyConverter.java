@@ -1,0 +1,55 @@
+import java.util.*;
+import java.io.*;
+class currencyConverter
+{
+static int ruppee;
+static int dirham;
+static int dollar;
+static int real;
+static int chilean_peso;
+static int mexican_peso;
+static int _yen;
+static int $australian;
+public static void main(String[] args) {
+	ruppee=63; // All the values are relative to the US Dollar
+	dirham=3;
+	real=3;
+	chilean_peso=565;
+	mexican_peso=18;
+	_yen=107;
+	$australian = 2;
+	currencyConverter obj=new currencyConverter();
+	obj.printCurrencies();
+	int Hexadecimal = 0x0041;
+	int octal = 0032;
+	int nice_looking = 1_2_3;
+	System.out.println("Hexadecimal in integers = "+Hexadecimal);
+	System.out.println("Octal in integers ="+octal);
+	System.out.println("Nice looking numbers in integers ="+nice_looking);
+	System.exit(0);
+}	
+
+void printCurrencies()
+{
+System.out.println("Indian Ruppee = "+ruppee);
+System.out.println("Dirham = "+dirham);
+System.out.println("Brazillian Real = "+real);
+System.out.println("Chilean Peso = "+chilean_peso);
+System.out.println("Mexican Peso = "+mexican_peso);
+System.out.println("Yen = "+_yen);
+System.out.println("Australian = "+$australian);
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+}

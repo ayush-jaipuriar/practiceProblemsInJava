@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - nthFibonacci",
+            "request": "launch",
+            "mainClass": "nthFibonacci"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - recursion",
+            "request": "launch",
+            "mainClass": "recursion"
+        }
+    ]
+}

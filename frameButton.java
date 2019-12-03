@@ -1,0 +1,15 @@
+import java.awt.*;
+class awt extends Frame {
+	awt () {
+		Button b =new Button("Click Here");
+		b.setBounds(30, 100, 80, 30);
+		setSize(400f);
+		setLayout(null);
+		setVisible(true);
+		add(b);
+	}
+	
+	public static void main(String[] args) {
+		awt a1=new awt();
+	}
+}
