@@ -1,0 +1,95 @@
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+class LinkedListDeletion {
+	Node head;
+	static class Node {
+		int data;
+		Node next;
+		
+		Node( int d) {
+			data=d;
+			next= null;
+			
+		}
+	}
+	
+	public static LinkedListDeletion insert (LinkedListDeletion list, int data) {
+	
+		Node newNOde = new Node ( data );
+		newNOde.next = null ;
+		
+		if (list.head == null ) {
+			list.head= newNOde;
+		}
+		else {
+		 Node lastNode = list.head;
+		 while (lastNode.next!=null) {
+		 	lastNode= lastNode.next;
+		 }
+		 lastNode.next= newNOde;
+		}
+		
+		return list;
+	}
+	
+	
+	public static void printList(LinkedListDeletion list) {
+		Node currentNode = list.head;
+		System.out.println("Linked List: ");
+		while (currentNode != null ) {
+			System.out.print(currentNode.data+" ");
+			currentNode = currentNode.next;
+			
+			
+		}
+		return ;
+	}
+	
+	public static LinkedListDeletion deleteNode(LinkedListDeletion list , int nodeToDelete ) {
+		if (list.head==null) {
+			System.out.println("List is empty");
+			return list;
+			}
+		Node tempNode = list.head;
+		Node currentNode = tempNode.next;
+		Node prevNode = list.head;
+		
+		if (tempNode.data==nodeToDelete) {
+			list.head=currentNode;
+			return list;
+		}
+		
+		while (currentNode!=null && currentNode.data!=nodeToDelete) {
+			prevNode= currentNode;
+			currentNode= currentNode.next;
+		}
+		
+		prevNode.next=  currentNode.next;
+		return list;
+		
+	} 
+	
+	
+	
+	public static void main(String[] args) {
+	
+		LinkedListDeletion list = new LinkedListDeletion();
+		list = insert(list, 1);
+		list = insert(list, 6);
+		list = insert(list, 8);
+		list = insert(list, 3);
+		System.out.println("Everything is working fine");
+		printList(list);
+		Scanner sc =new Scanner (System.in);
+		int input;
+		System.out.println("Enter the element you want to delete");
+		input = sc.nextInt();
+		deleteNode(list, input);
+		printList(list);
+		
+		
+		
+		
+	}
+}
