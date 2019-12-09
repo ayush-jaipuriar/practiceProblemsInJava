@@ -55,21 +55,14 @@ class LinkedListDeletion {
 		Node currentNode = tempNode.next;
 		Node prevNode = list.head;
 		
-		if (tempNode.data==nodeToDelete) {
-			list.head=currentNode;
-			return list;
-		}
-		
 		while (currentNode!=null && currentNode.data!=nodeToDelete) {
 			prevNode= currentNode;
 			currentNode= currentNode.next;
 		}
-		
 		prevNode.next=  currentNode.next;
 		return list;
 		
-	}
-	 
+	} 
 	
 	
 	
