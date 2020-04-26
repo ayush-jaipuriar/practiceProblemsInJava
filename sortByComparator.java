@@ -24,6 +24,18 @@ class sortByComparator {
 			
 		}
 		
+		Collections.sort(list, new Comparator<PlayerStats>() {
+			public int compare(PlayerStats player1, PlayerStats player2) {
+				return player1.playerName.compareTo(player2.playerName);
+			}
+		});
+		
+		for (int i=0; i<playerId.length; i++) {
+			System.out.println(list.get(i).playerName);
+			
+			
+		}
+		
 		
 		
 		
