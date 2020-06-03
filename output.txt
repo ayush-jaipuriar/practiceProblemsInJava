@@ -1,2 +1,3 @@
-Player[Name = Henderson , Position = Midfield , Team = Liverpool]
-Player[Name = Alisson , Position = Goalkeeper , Team = Liverpool]
+Player	Position	Team	
+Henderson	Midfield	Liverpool	
+Alisson	Goalkeeper	Liverpool	
